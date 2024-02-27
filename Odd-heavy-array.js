@@ -22,3 +22,19 @@ Examples:
 
 
 // Solution
+
+function isOddHeavy(n) {
+
+  let min_odd = Number.MAX_SAFE_INTEGER
+  ,  max_even = Number.MIN_SAFE_INTEGER;
+  
+  for (let m of n)
+    if (m % 2)
+      min_odd = Math.min(min_odd, m);
+    else
+      max_even = Math.max(max_even, m);
+      
+  return min_odd !== Number.MAX_SAFE_INTEGER 
+      && min_odd > max_even;
+  
+}
