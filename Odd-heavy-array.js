@@ -35,6 +35,7 @@ function isOddHeavy(n) {
       max_even = Math.max(max_even, m);
       
   return min_odd !== Number.MAX_SAFE_INTEGER 
-      && min_odd > max_even;
-  
+      && min_odd > max_even; 
 }
+
+// or
