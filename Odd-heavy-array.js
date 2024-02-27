@@ -39,3 +39,10 @@ function isOddHeavy(n) {
 }
 
 // or
+
+function isOddHeavy(n){  
+  const odds = n.filter(e => e % 2)
+  const evens = n.filter(e => !(e % 2))
+  
+  return !!odds.length && Math.min(...odds) > Math.max(...evens)
+}
