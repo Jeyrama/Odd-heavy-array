@@ -19,3 +19,6 @@ Examples:
   write a function called isOddHeavy or is_odd_heavy that accepts an integer array 
   and returns true if the array is odd-heavy else return false.
 */
+
+
+// Solution
